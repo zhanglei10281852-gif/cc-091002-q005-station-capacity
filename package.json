@@ -1,0 +1,1 @@
+{"name":"transfer-station-capacity","version":"0.8.0","private":true,"type":"module","scripts":{"test":"node --test"},"engines":{"node":">=20"},"description":"垃圾转运站容量与预约服务"}

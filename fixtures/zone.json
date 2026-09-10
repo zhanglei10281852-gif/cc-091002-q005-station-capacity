@@ -1,0 +1,1 @@
+{"id":"ZONE-A","material":"mixed-household","limitKg":10000,"stockKg":4000,"reservation":{"id":"R-1","expectedKg":2000,"expiresAt":"2026-09-10T12:00:00+08:00"}}

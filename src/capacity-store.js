@@ -1,0 +1,1 @@
+export class CapacityStore { constructor(zone){this.zone=structuredClone(zone);this.reservations=new Map();} snapshot(){return {zone:structuredClone(this.zone),reservations:[...this.reservations.values()].map(item=>structuredClone(item))};} }

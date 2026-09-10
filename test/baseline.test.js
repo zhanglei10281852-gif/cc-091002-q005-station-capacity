@@ -1,0 +1,2 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { readFile } from 'node:fs/promises'; import { CapacityStore } from '../src/capacity-store.js'; import { CapacityService } from '../src/capacity-service.js';
+test('容量充足时顺序预约成功',async()=>{const data=JSON.parse(await readFile(new URL('../fixtures/zone.json',import.meta.url)));const service=new CapacityService(new CapacityStore(data));assert.equal((await service.reserve(data.reservation)).status,'held');assert.equal(service.available(),4000);});
